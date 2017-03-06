@@ -28,6 +28,7 @@ function showCoords(event) {
 
 function removeCircle(event) {
     var id = '#' + event.toElement.id;
+    document.getElementById(event.toElement.id).style.pointerEvents = 'none';
     var countdown = 5;
     $(id).html(5);
     var timer = setInterval(function () {
