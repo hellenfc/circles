@@ -3,7 +3,7 @@ var cont = 0;
 function showCoords(event) {
     var mouseX = event.pageX;
     var mouseY = event.pageY;
-    //    console.log(document.getElementsByTagName("div").onmouseover);
+   
     if (event.target == event.currentTarget) {
         var div = document.createElement("div");
         $("body").append(div);
@@ -42,5 +42,5 @@ function removeCircle(event) {
     //    setTimeout(function(){
     //    alert("eliminado!!!");    
     //    }, 5000);
-    console.log(event.toElement.id);
+//    console.log(event.toElement.id);
 }
